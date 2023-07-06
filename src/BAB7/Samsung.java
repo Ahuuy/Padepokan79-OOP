@@ -2,11 +2,11 @@ package BAB7;
 
 import BAB7.interfaces.Phone;
 
-public class Xiaomi implements Phone {
+public class Samsung implements Phone {
     private int volume;
     private boolean isPowerOn;
 
-    public Xiaomi() {
+    public Samsung() {
         this.volume = 50;
     }
 
@@ -17,7 +17,7 @@ public class Xiaomi implements Phone {
         } else {
             isPowerOn = true;
             System.out.println("Handphone menyala......");
-            System.out.println("Selamat datang di Xiaomi");
+            System.out.println("Selamat datang di Samsung");
             System.out.println("Versi android 11");
         }
     }
@@ -38,7 +38,7 @@ public class Xiaomi implements Phone {
                 System.out.println("Volume Sekarang " + this.volume + "%");
             }
         } else {
-            System.out.println("Handhpne mati silahkan hidupkan terlebih dahulu");
+            System.out.println("Handphone mati, silahkan hidupkan terlebih dahulu");
         }
     }
 
@@ -52,24 +52,7 @@ public class Xiaomi implements Phone {
                 System.out.println("Volume Sekarang " + this.volume + "%");
             }
         } else {
-            System.out.println("Handhpne mati silahkan hidupkan terlebih dahulu");
+            System.out.println("Handphone mati, silahkan hidupkan terlebih dahulu");
         }
-    }
-
-    // Getter dan setter
-    public int getVolume() {
-        return volume;
-    }
-
-    public void setVolume(int volume) {
-        this.volume = volume;
-    }
-
-    public boolean isPowerOn() {
-        return isPowerOn;
-    }
-
-    public void setPoweron(boolean isPowerOn) {
-        this.isPowerOn = isPowerOn;
     }
 }
