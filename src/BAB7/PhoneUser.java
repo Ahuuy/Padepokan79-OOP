@@ -5,32 +5,50 @@ import BAB7.interfaces.Phone;
 public class PhoneUser {
     private Phone phone;
 
+    public PhoneUser() {
+    }
+
     public PhoneUser(Phone phone) {
         this.phone = phone;
     }
 
-    public void turnOnThePhone() {
-        this.phone.powerOn();
-    }
-
-    public void turnOffThePhone() {
-        this.phone.powerOff();
-    }
-
-    public void makePhoneLouder() {
-        this.phone.volumeUp();
-    }
-
-    public void makePhoneSilence() {
-        this.phone.volumeDown();
-    }
-
-    //getter dan setter
     public Phone getPhone() {
-        return this.phone;
+        return phone;
     }
 
     public void setPhone(Phone phone) {
         this.phone = phone;
+    }
+
+    public void powerOn() {
+        if (phone != null) {
+            phone.powerOn();
+        } else {
+            System.out.println("Belum ada handphone yang dipilih.");
+        }
+    }
+
+    public void powerOff() {
+        if (phone != null) {
+            phone.powerOff();
+        } else {
+            System.out.println("Belum ada handphone yang dipilih.");
+        }
+    }
+
+    public void volumeUp() {
+        if (phone != null) {
+            phone.volumeUp();
+        } else {
+            System.out.println("Belum ada handphone yang dipilih.");
+        }
+    }
+
+    public void volumeDown() {
+        if (phone != null) {
+            phone.volumeDown();
+        } else {
+            System.out.println("Belum ada handphone yang dipilih.");
+        }
     }
 }
